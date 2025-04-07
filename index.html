@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achei Costura</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #d62828;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #d62828;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #bb1f1f;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Achei Costura</h1>
+    <p>Conectando marcas com quem sabe costurar de verdade</p>
+  </header>
+  <section>
+    <h2>Cadastre-se para saber quando lançarmos!</h2>
+    <form action="#" method="POST">
+      <label for="name">Seu nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Seu melhor e-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tipo">Você é:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="costureira">Costureira / Facção</option>
+        <option value="marca">Marca / Empreendedor</option>
+      </select>
+
+      <button type="submit">Quero ser avisado</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Achei Costura. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
